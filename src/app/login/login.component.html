@@ -1,0 +1,76 @@
+
+   <div class="login-container">
+        <div class="login-box animated fadeInDown">
+            <div class="login-logo"></div>
+            <div class="login-body">
+                <div class="login-title"><strong>Login</strong> to your account</div>
+				<br/>
+                <form  class="form-horizontal"  [formGroup]="loginForm" (ngSubmit)="onFormSubmit()">
+                    <div class="form-group">
+						
+                        <div class="col-md-12" >
+                            <label for="inputEmail">Email :</label>
+                            <input type="text" 
+								   class="form-control" 
+                                   formControlName = "email"  
+                                   id="inputEmail"
+                                   placeholder="Email"
+                                   size="33px" /> 
+                         </div>
+                         <div *ngIf="email.invalid && email.touched">
+                             <div *ngIf = "email.errors?.required">
+                                 Email field can't be blank
+                             </div>
+                            <div *ngIf = "email.errors?.pattern">
+                              The email id doesn't seem right
+                            </div>
+                         </div>
+						
+                    </div>
+                    
+                    <br />
+                    <div formGroupName = "password">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                         <label for="inputPassword">Password</label>
+                            <input type="text" class="form-control" 
+                            formControlName = "pwd"
+                             placeholder="Password" 
+                             id="Password"
+                             size="30px"/>
+                        </div>
+                        <div class="col-sm-3 text-danger" 
+                        *ngIf="(password.invalid && password.touched)">
+                             Password needs to be more than 8 characters
+                        </div>
+                   </div>
+                   
+                   <br />
+                      <div class="form-group">
+                           <div class="col-md-12">
+                               <label for="confirmPassword" >Confirm Password</label>
+                                <input type="password" 
+                                formControlName = "confirmPwd"
+                                id="confirmPassword"
+                                placeholder="Password" />
+                            </div>
+                       </div>
+                    </div>     
+                    <br /> 
+                    <div class="form-group">
+                        <div class="col-md-6">
+                           <p>Your information: 
+                            {{ loginForm.value | json }}
+                            </p>  
+                            <div class="form-group">
+                                <button type="reset" class="btn btn-default">Cancel</button>
+                                
+                               <button type="submit" [disabled] = "!signupForm.valid" class="btn btn-primary">Submit</button>7
+                               
+                            </div>
+                        </div>
+                       
+                    </div>
+                </form>
+       </div>
+   </div>
