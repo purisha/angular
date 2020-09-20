@@ -3,16 +3,15 @@
         <div class="login-logo"></div>
             <div class="login-body">
                 <div class="login-title"><strong>Login</strong> to your account</div><br/>
-                <form  class="form-horizontal"[formGroup]="loginForm">
-                    
+                <form  class="form-horizontal"[formGroup]="loginForm"> 
                     <div class="form-group">
                         <div class="col-md-12" >
                             <label for="inputEmail">Email :</label>
                             <input type="text" class="form-control" 
                             formControlName = "email"  
                             id="inputEmail"
-                             placeholder="Email"
-                             size="33px" /> 
+                            placeholder="Email"
+                            size="33px" /> 
                         </div>
                         <div *ngIf="email.invalid && email.touched">
                             <div *ngIf = "email.errors?.required">
@@ -22,24 +21,22 @@
                               The email id doesn't seem right
                             </div>
                         </div>
-                    </div>
-                    
+                    </div> 
                     <br />
                     <div formGroupName = "password">
                     <div class="form-group">
                         <div class="col-md-12">
                          <label for="inputPassword">Password</label>
                             <input type="text" class="form-control" 
-                            formControlName = "pwd"
+                             formControlName = "pwd"
                              placeholder="Password" 
                              id="Password"
-                            size="30px"/>
+                             size="30px"/>
                         </div>
                         <div class="col-sm-3 text-danger" *ngIf="(password.invalid && password.touched)">
                              Password needs to be more than 8 characters
                         </div>
-                   </div>
-                   
+                    </div>
                    <br />
                       <div class="form-group">
                            <div class="col-md-12">
