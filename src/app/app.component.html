@@ -12,8 +12,7 @@
                 <a routerLink="/login"><span class="fa fa-sign-in"></span>login</a>     
             </li>
             <li class="xn-openable" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                <a routerLink="gallery/paris"><span class="glyphicon glyphicon-step-forward"><span class="xn-text">Hotel</span>
-                </a>
+                <a routerLink="gallery/paris"><span class="glyphicon glyphicon-step-forward"><span class="xn-text">Hotel</span></a> 
                 <ul>
                     <li routerLinkActive="active"><a routerLink="gallery/rome"><span class="fa fa-user"></span> Rome</a></li>
                     <li routerLinkActive="active"><a routerLink="gallery/paris"><span class="fa fa-user"></span> paris</a> </li>
@@ -35,9 +34,7 @@
             <ul class="x-navigation x-navigation-horizontal x-navigation-panel">
                 <li class="xn-icon-button">
                     <button type="button" mat-button (click)="drawer.toggle()">Menu</button>
-                    <a routerLink="/home" class="x-navigation-minimize">
-                    <span class="fa fa-dedent"><button type="button">Home</button></span> 
-                    </a>
+                    <a routerLink="/home" class="x-navigation-minimize"><span class="fa fa-dedent"><button type="button">Home</button></span></a>  
                 </li>
             </ul>
         </div>
