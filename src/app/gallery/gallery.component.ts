@@ -1,7 +1,6 @@
 import { Component,  OnInit } from '@angular/core';
 import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
 
-
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
@@ -9,7 +8,6 @@ import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gal
 })
 
 export class GalleryComponent implements OnInit {
-
 
  ngOnInit() {
     }
