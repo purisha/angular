@@ -31,9 +31,7 @@ export class LoginComponent implements OnInit {
                 confirmPwd: ['', [Validators.required,
                                   Validators.minLength(8)]]
             }),
-	 })
-	
-		 
-  }
-}
+	     })	 
+    }
+ }
 
