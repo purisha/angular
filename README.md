@@ -14,8 +14,18 @@ This is a single-page web application built with **Angular**. The project demons
 - JavaScript  
 - HTML5  
 - CSS3 
+## Installation  
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/purisha/angular.git
 
+   Navigate into the project directory:
+   bash cd angular
+
+   Install dependencies:
+   bash npm install  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.5.
+
 
 ## Development server
 
