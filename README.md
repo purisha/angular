@@ -1,4 +1,31 @@
 # Form
+This is a single-page web application built with **Angular**. The project demonstrates modular architecture, component-based design, and clean separation of concerns using Angular services and dependency injection.
+
+## Features  
+- Responsive and dynamic UI using Angular components  
+- Modular architecture for scalability  
+- Service-based data handling (via Angular Services)  
+- Routing for navigation between views  
+- Form handling / Validation (if applicable)  
+
+## Tech Stack  
+- Angular  
+- TypeScript  
+- JavaScript  
+- HTML5  
+- CSS3
+## Installation  
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/purisha/angular.git  
+
+Navigate into the project directory:
+bash cd angular  
+Install dependencies:
+npm insatll
+
+Run the project:
+ng serve  
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.5.
 
