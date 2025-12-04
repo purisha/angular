@@ -1,0 +1,69 @@
+
+
+<mat-drawer-container class="container" autosize>
+<mat-drawer #drawer class="page-sidebar page-navigation-toggled" mode="side">
+<ul class="x-navigation">
+
+<!-- HOME -->
+<li class="xn-openable" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+<a routerLink="/"><span class="fa fa-sign-in"></span> Home</a>
+</li>
+
+<!-- GALLERY -->
+<li class="xn-openable" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+<a routerLink="/gallery">Gallery</a>
+</li>
+
+<!-- LOGIN -->
+<li class="xn-openable" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+<a routerLink="/login"><span class="fa fa-sign-in"></span> Login</a>
+</li>
+
+
+<!-- HOTEL MENU WITH SUB ITEMS -->
+<li class="xn-openable" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+
+<a routerLink="gallery/paris">
+<span class="glyphicon glyphicon-step-forward"></span>
+<span class="xn-text">Hotel</span>
+</a>
+
+<ul>
+<li routerLinkActive="active">
+<a routerLink="gallery/rome"><span class="fa fa-user"></span> Rome</a>
+</li>
+
+<li routerLinkActive="active">
+<a routerLink="gallery/paris"><span class="fa fa-user"></span> Paris</a>
+</li>
+
+<li routerLinkActive="active">
+<a routerLink="gallery/newyork"><span class="fa fa-user"></span> Newyork</a>
+</li>
+</ul>
+
+</li>
+
+</ul>
+</mat-drawer>
+
+<div class="page-content">
+<div class="page-content-wrap">
+<!-- TOGGLE NAVIGATION -->
+<ul class="x-navigation x-navigation-horizontal x-navigation-panel">
+<li class="xn-icon-button">
+<button type="button" mat-button (click)="drawer.toggle()">Menu</button>
+
+<a routerLink="/home" class="x-navigation-minimize">
+<span class="fa fa-dedent"></span>
+<button type="button">Home</button>
+</a>
+</li>
+</ul>
+</div>
+
+<div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+<router-outlet></router-outlet>
+</div>
+</div>
+</mat-drawer-container>
