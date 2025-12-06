@@ -53,18 +53,22 @@ const appRoutes: Routes = [
     RComponent
   ],
   imports: [
+   
+	  HttpModule, 
     BrowserModule,
-	HttpModule,
-	BrowserAnimationsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+	  BrowserAnimationsModule,
 	  NgxGalleryModule,
 	  NgxImageGalleryModule,
 	  MatButtonModule,
-      MatCheckboxModule,
+    MatCheckboxModule,
 	  MatSidenavModule,
 	  ReactiveFormsModule,
-	RouterModule.forRoot(appRoutes)
+	  RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
