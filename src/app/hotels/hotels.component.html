@@ -1,0 +1,29 @@
+<div class="content-frame-top">
+    <div class="page-title">
+        <h2><span class="fa fa-image"></span> Gallery</h2>
+    </div>
+    <!-- START CONTENT FRAME BODY -->
+    <div class="content-frame-body content-frame-body-left">
+
+        <div class="gallery">
+            <a class="gallery-item" *ngFor="let item of images" [title]="item.title" data-gallery>
+
+                <div class="image">
+                    <img [src]="item.src" [alt]="item.title" />
+                    <ul class="gallery-item-controls">
+                        <li><label class="check"><input type="checkbox" class="icheckbox" /></label></li>
+                        <li><span class="gallery-item-remove"><i class="fa fa-times"></i></span></li>
+                    </ul>
+                </div>
+
+                <div class="meta">
+                    <strong>{{ item.title }}</strong>
+                    <span>{{ item.subtitle }}</span>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
