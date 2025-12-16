@@ -1,0 +1,13 @@
+<h2>
+    {{curentCity.title}}
+</h2>
+<img [src]="curentCity.image" class="city-image">
+<div class="=" rooms">
+    <div class="=" room-card" *ngFor="let room of curentCity.rooms">
+        <h4>{{room.name}}</h4>
+        <p>Price: {{romm.price}} $</p>
+        <button [routerLink]="['/hotels,city,'reserve']" [queryParms]="{room: room.name, price:room.price}س">
+            Reserve
+        </button>
+    </div>
+</div>
