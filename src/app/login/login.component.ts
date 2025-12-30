@@ -3,8 +3,6 @@ import { LoginService } from '../services/login.service';
 import { Router } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { User } from '../User';
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -70,4 +68,5 @@ export class LoginComponent implements OnInit {
     });
   }
 }
+
 
